@@ -6,7 +6,7 @@ import com.natpryce.Success
 import com.natpryce.onFailure
 import com.natpryce.await.NoStackTraceException.AwaitFailure
 
-class AwaitableResult<E> {
+class AwaitableResult<E> private constructor() {
 
     private lateinit var failure: Failure<E>
 
